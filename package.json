@@ -13,13 +13,13 @@
   "author": "Braydon Harris",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "^1.10.0",
-    "@actions/github": "^5.1.1",
-    "@azure/identity": "^3.2.4",
-    "@azure/keyvault-secrets": "^4.7.0"
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "@azure/identity": "^4.5.0",
+    "@azure/keyvault-secrets": "^4.9.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
-    "@vercel/ncc": "^0.36.1"
+    "@vercel/ncc": "^0.38.3"
   }
 }
