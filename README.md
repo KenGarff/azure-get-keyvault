@@ -1,6 +1,6 @@
 # Get azure secrets from keyvault github action
 
-This action gets the secrets from azure keyvault and sets them as environment variables in the action.
+This action gets the secrets from azure keyvault and sets them as github action secret variables in the action.
 
 # Setup
 
@@ -26,7 +26,7 @@ Then add the following to your github action workflow file
       uses: ./custom-github-actions/azure-env-vars
       id: dev-vars
       with:
-		keyvault_name: ${{ env.KEYVAULT_NAME }}	  	
+        keyvault_name: ${{ env.KEYVAULT_NAME }}	  	
         env: ${{ env.ENV_NAME }}
         app_name: ${{ env.APP }}
 ```
