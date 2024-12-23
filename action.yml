@@ -1,0 +1,18 @@
+name: 'Azure Secrets Action'
+description: 'Action to get secrets from Azure Key Vault'
+inputs:
+  keyvault_name: 
+    description: 'Name of the Azure Key Vault'
+    required: true
+  app_name: 
+    description: 'Name of the app to get'
+    required: true
+  env: 
+    description: 'Environment to get secrets for'
+    required: true
+outputs:
+  secrets:
+    description: 'Secret names that were retrieved'
+runs:
+  using: 'node20'
+  main: 'index.js'
