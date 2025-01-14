@@ -4,9 +4,7 @@ This action gets the secrets from azure keyvault and sets them as github action 
 
 # Usage
 
-copy the contents of the `dist` folder into the folder `custom-gitub-actions/azure-env-vars` of the repository you want to use the action in.
-
-Then add the following to your github action workflow file
+Add the following to your github action workflow file
 
 ```yaml
     - name: Get App Env Vars
@@ -18,7 +16,7 @@ Then add the following to your github action workflow file
         app_name: ${{ env.APP }}
 ```
 
-This needs to be used in conjuction with the azure login action.
+This needs to be used in conjuction with the azure login action in order to work properly. See example below
 
 Example action
 
