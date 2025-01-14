@@ -31,5 +31,22 @@ Then add the following to your github action workflow file
         app_name: ${{ env.APP }}
 ```
 
+This needs to be used in conjuction with the azure login action.
 
 
+# Structure your key vault
+
+To use this action to the best effect, you should structure your key vault as follows by adding the following tags 
+"tags": {
+	"app_name": "{App Name}",
+	"env": "{ Environment}",
+	"key": " {Key Name}"
+}
+
+This allows the action to retrieve the correct secrets based on the environment and app name. The last tag is the key which is what sets the secret value to a specific key name in the action 
+
+
+## TODO
+
+- Add suport for optional env and app name
+- add testing

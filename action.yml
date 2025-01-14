@@ -1,5 +1,6 @@
-name: 'Azure Secrets Action'
+name: get-azure-env-vars-action
 description: 'Action to get secrets from Azure Key Vault'
+author: Braydon Harris
 inputs:
   keyvault_name: 
     description: 'Name of the Azure Key Vault'
@@ -13,6 +14,9 @@ inputs:
 outputs:
   secrets:
     description: 'Secret names that were retrieved'
+branding:
+  icon: 'code'
+  color: 'red'
 runs:
   using: 'node20'
   main: 'index.js'
