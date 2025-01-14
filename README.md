@@ -46,7 +46,7 @@ jobs:
       run:
         working-directory: ./${{ env.APP }}
 
-	steps:
+    steps:
       - uses: actions/checkout@v4.1.1
 
       - name: Azure Authentication
@@ -63,21 +63,21 @@ jobs:
         uses: KenGarff/azure-get-keyvault@v1.0
         id: prod-vars
         with:
-		  keyvault_name: ${{ env.KEYVAULT_NAME }}	
+          keyvault_name: ${{ env.KEYVAULT_NAME }}	
           env: ${{ env.ENV_NAME }}
           app_name: ${{ env.APP }}
 	
 	  # Now you can take the variables from the output of the action and use them in your action or create a env file for you app which all get added to 
 
-	  # example using the env vars that got set from the action to create a .env for a nodejs app
-	  - name: Prep Server Env Vars
-		run : |
-			touch .env
-			echo "NODE_ENV=${NODE_ENV}" >> .env
-			echo "PORT=${APP_PORT}" >> .env
-			echo "APP_ENV=${APP_ENV}" >> .env
-			
-	  # Azure logout 
+        # example using the env vars that got set from the action to create a .env for a nodejs app
+      - name: Prep Server Env Vars
+        run : |
+            touch .env
+            echo "NODE_ENV=${NODE_ENV}" >> .env
+            echo "PORT=${APP_PORT}" >> .env
+            echo "APP_ENV=${APP_ENV}" >> .env
+
+      # Azure logout 
       - name: logout
         if: always()
         run: |
