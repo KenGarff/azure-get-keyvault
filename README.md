@@ -66,10 +66,10 @@ jobs:
           keyvault_name: ${{ env.KEYVAULT_NAME }}	
           env: ${{ env.ENV_NAME }}
           app_name: ${{ env.APP }}
-	
-	  # Now you can take the variables from the output of the action and use them in your action or create a env file for you app which all get added to 
+        
+      # Now you can take the variables from the output of the action and use them in your action or create a env file for you app which all get added to 
 
-        # example using the env vars that got set from the action to create a .env for a nodejs app
+      # example using the env vars that got set from the action to create a .env for a nodejs app
       - name: Prep Server Env Vars
         run : |
             touch .env
