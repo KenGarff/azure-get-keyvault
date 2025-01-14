@@ -85,11 +85,13 @@ jobs:
 # Structure your key vault
 
 To use this action to the best effect, you should structure your key vault as follows by adding the following tags 
+```json
 "tags": {
 	"app_name": "{App Name}",
 	"env": "{ Environment}",
 	"key": " {Key Name}"
 }
+```
 
 This allows the action to retrieve the correct secrets based on the environment and app name. The last tag is the key which is what sets the secret value to a specific key name in the action 
 
