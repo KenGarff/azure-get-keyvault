@@ -6,7 +6,6 @@ name: Publish to Github releases
 # or API.
 on:
     push:
-        branches: [main]
         tags:
             - 'v*'
 
