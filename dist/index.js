@@ -1,4 +1,4 @@
-import './sourcemap-register.cjs';import { createRequire as __WEBPACK_EXTERNAL_createRequire } from "module";
+import { createRequire as __WEBPACK_EXTERNAL_createRequire } from "module";
 /******/ var __webpack_modules__ = ({
 
 /***/ 4914:
@@ -65022,5 +65022,3 @@ exports.version = version;
 /******/ // This entry module is referenced by other modules so it can't be inlined
 /******/ var __webpack_exports__ = __nccwpck_require__(1730);
 /******/ 
-
-//# sourceMappingURL=index.js.map
