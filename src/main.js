@@ -13,7 +13,7 @@ async function main(){
 	const url = `https://${keyVaultName}.vault.azure.net`;  
 	const client = new SecretClient(url, credential);
 	console.log("Connected to Azure Key Vault");
-	const secrets: any = [];
+	const secrets = [];
 	for await (const secretProperties of client.listPropertiesOfSecrets()){
 		// do something with properties
 		const { name, properties, value } = await client.getSecret(secretProperties.name);
@@ -21,7 +21,7 @@ async function main(){
 	}
 	console.log("Fetched all the secrets from Azure Key Vault");
 	// filter out the screts based on the tags from the input
-	const names: any = [];
+	const names = [];
 	for (let i = 0; i < secrets.length; i++) {
 		const secret = secrets[i];
 		const tags = secret.tags;
