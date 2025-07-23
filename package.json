@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@actions/github": "^6.0.0",
+    "@actions/github": "^6.0.1",
     "@azure/identity": "^4.5.0",
     "@azure/keyvault-secrets": "^4.9.0"
   },
