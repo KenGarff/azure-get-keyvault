@@ -18,5 +18,5 @@ branding:
   icon: 'code'
   color: 'red'
 runs:
-  using: 'node20'
+  using: 'node22'
   main: 'dist/index.js'
