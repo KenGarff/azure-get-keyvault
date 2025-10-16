@@ -16,7 +16,7 @@ Add the following to your github action workflow file
         app_name: ${{ env.APP }}
 ```
 
-This needs to be used in conjuction with the azure login action in order to work properly. See example below
+This needs to be used in conjunction with the azure login action in order to work properly. See example below
 
 Example action
 
@@ -111,5 +111,5 @@ This puts the compiled script in the `dist` folder
 
 ## TODO
 
-- Add suport for optional env and app name
+- Add support for optional env and app name
 - add testing

@@ -20,7 +20,7 @@ async function main(){
 		secrets.push({name, value, tags: properties['tags']});
 	}
 	console.log("Fetched all the secrets from Azure Key Vault");
-	// filter out the screts based on the tags from the input
+	// filter out the secrets based on the tags from the input
 	const names = [];
 	for (let i = 0; i < secrets.length; i++) {
 		const secret = secrets[i];
