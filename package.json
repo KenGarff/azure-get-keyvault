@@ -15,7 +15,7 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.1",
-    "@azure/identity": "^4.13.0",
+    "@azure/identity": "^4.13.1",
     "@azure/keyvault-secrets": "^4.10.0"
   },
   "devDependencies": {
