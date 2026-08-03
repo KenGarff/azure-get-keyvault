@@ -1,5 +1,5 @@
-[!WARNING]
-This repo is no longer updated 
+> [!WARNING]
+> This repo is no longer updated and will we archived in the future
 
 # Get azure secrets from keyvault github action
 
