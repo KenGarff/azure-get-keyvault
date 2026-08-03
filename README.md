@@ -1,3 +1,6 @@
+[!WARNING]
+This repo is no longer updated 
+
 # Get azure secrets from keyvault github action
 
 This action gets the secrets from azure keyvault and sets them as github action secret variables in the action.
